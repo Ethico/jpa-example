@@ -3,6 +3,8 @@ Thumbs.db
 ehthumbs.db
 
 # Folder config file
+.idea
+target
 Desktop.ini
 
 # Recycle Bin used on file shares
