@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Ethico/jpa-example.png)](https://travis-ci.org/Ethico/jpa-example)
-[![Code Coverage](https://coveralls.io/github/Ethico/jpa-example.png)](https://coveralls.io/github/Ethico/jpa-example)
+[![Coverage Status](https://coveralls.io/repos/github/Ethico/jpa-example/badge.svg?branch=master)](https://coveralls.io/github/Ethico/jpa-example?branch=master)
 
 ## Project Name
 JPA Example
