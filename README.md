@@ -5,13 +5,13 @@ JPA Example
 Sample project to explore spring framework modules
 
 ## Modules explored
-Spring Boot
-Actuator
-Spring Configuration ( By excluding datasource and jpa autoconfiguration )
-Spring Mvc
-Thymeleaf Basic
-Spring data
-Spring test
+1.Spring Boot
+2.Actuator
+3.Spring Configuration ( By excluding datasource and jpa autoconfiguration )
+4.Spring Mvc
+5.Thymeleaf Basic
+6.Spring data
+7.Spring test
 
 ## Information
 Added few notes along with the classes.Please refer them
