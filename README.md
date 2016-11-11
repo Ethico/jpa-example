@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Ethico/jpa-example.png)](https://travis-ci.org/Ethico/jpa-example)
+
 ## Project Name
 JPA Example
 
