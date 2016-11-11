@@ -2,6 +2,7 @@ package com.example.config;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
@@ -44,7 +45,7 @@ Defining basePackage is required otherwise application does not recognize the en
 @EnableJpaRepositories(basePackages = "com.example")
 @EnableTransactionManagement
 public class AppConfiguration {
-
+     /* Data source java configuration */
     @Bean
     public DataSource dataSource() {
         DataSourceBuilder builder=DataSourceBuilder.create();
@@ -54,7 +55,7 @@ public class AppConfiguration {
         builder.driverClassName("org.h2.Driver");
         return builder.build();
     }
-
+    /* Entity manager configuraion JPA  */
    @Bean
     public EntityManagerFactory entityManagerFactory() {
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
@@ -67,11 +68,11 @@ public class AppConfiguration {
         factory.afterPropertiesSet();
         return factory.getObject();
     }
-
+    /* Transaction manager configuration for handling transaction */
     @Bean
     public PlatformTransactionManager transactionManager() {
-        JpaTransactionManager txManager = new JpaTransactionManager();
-        txManager.setEntityManagerFactory(entityManagerFactory());
+        JpaTransactionManager txManager = new JpaTransactionManager(entityManagerFactory());
+        //txManager.setEntityManagerFactory(entityManagerFactory());
         return txManager;
     }
 }

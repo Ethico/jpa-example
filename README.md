@@ -1,7 +1,18 @@
 ## Project Name
 JPA Example
 
-## Description
-This is the sample spring boot application which uses
-spring mvc , thymeleaf and data-jpa with h2 as in memory databases
+## Motivation
+Sample project to explore spring framework modules
 
+## Modules explored
+Spring Boot
+Actuator
+Spring Configuration ( By excluding datasource and jpa autoconfiguration )
+Spring Mvc
+Thymeleaf Basic
+Spring data
+Spring test
+
+## Information
+Added few notes along with the classes.Please refer them
+for more clarity.

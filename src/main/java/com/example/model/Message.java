@@ -5,6 +5,9 @@ import javax.persistence.*;
 /**
  * Created by hrushikeshp on 11/10/2016.
  */
+/*
+   Message is an entity class used for JPA
+*/
 @Entity
 public class Message {
     @Id

@@ -7,15 +7,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-/**
- * Created by hrushikeshp on 11/10/2016.
- */
+/* This is Application class. Spring boot executes main method directly*/
 @ComponentScan(basePackages = "com.example")
 public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class);
     }
+    /*
+    CommandLineRunner is a callback interface which gets called when main executes
+    */
     @Bean
     public CommandLineRunner demo(final MessageRepository repository){
         return new CommandLineRunner() {

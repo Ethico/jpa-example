@@ -16,6 +16,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * Created by hrushikeshp on 11/10/2016.
  */
 @RunWith(SpringRunner.class)
+/*
+    WebvcTest is for testing single controller .
+*/
 @WebMvcTest(HomeController.class)
 /*
    Note : ContextConfiguration is required here and it should point to

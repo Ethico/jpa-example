@@ -44,7 +44,7 @@ public class MessageControllerTest {
         mockMessages.add(new Message("sample"));
         given(this.messageService.messageList()).willReturn(mockMessages);
         this.mockMvc.perform(MockMvcRequestBuilders.get("/messages"))
-                .andDo(print())
+              //  .andDo(print())
                 .andExpect(status().isFound());
     }
 

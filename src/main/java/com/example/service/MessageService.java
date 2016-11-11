@@ -8,8 +8,9 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by hrushikeshp on 11/10/2016.
+/*
+    Simple Service class which just calls the repository.
+    Not included any business validation under this class.
  */
 @Service
 public class MessageService {
