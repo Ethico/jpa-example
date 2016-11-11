@@ -5,6 +5,7 @@ JPA Example
 Sample project to explore spring framework modules
 
 ## Modules explored
+
 1.Spring Boot
 2.Actuator
 3.Spring Configuration ( By excluding datasource and jpa autoconfiguration )
